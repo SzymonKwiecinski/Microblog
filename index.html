@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Microblog</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar__title">
+            <img class="navbar__logo" src="image1.svg" alt="Book picture" />Microblog
+        </div>
+        <div class="navbar__navigation">
+            <ul>
+                <li class="navbar__navigation-item">
+                    <a href="#" class="navbar__link">Recent</a>
+                </li>
+                <li class="navbar__navigation-item">
+                    <a href="#" class="navbar__link">Calendar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section>
+            <h1>Add new entry</h1>
+            <form class="form" method="POST">
+                <p class="form__input">
+                    <label for="entry" class="form__label">Entry content:</label>
+                    <textarea name="content" id="entry" class="form_textarea"></textarea>
+                </p>
+                <button type="submit" class="form__submit">Submit</button>
+            </form> 
+        </section>
+            <h1>Recent poems</h1>
+            <article class="entry">
+                <div>
+                    <h2 class="entry__title">poem 1</h2>
+                    <time class="entry__date" datetime="2022-01-01" >10 Jan</time>
+                </div>
+                <p class="entry__content">
+                    lapis lazum
+                </p>
+            </article>
+        <section>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="left">
+                <a class="footer__item">Made by Szymon Kwieciński</a>
+                <a class="footer__item">Link to my GitHub:)</a>
+            </section>
+            <section class="right">
+                <div class="footer_column">
+                    <a class="footer__item">Recent</a>
+                    <a class="footer__item">Calendar</a>
+                </div>
+                <div>
+                    <a class="footer__item" href="#">About</a>
+                    <a class="footer__item">How this was made</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
