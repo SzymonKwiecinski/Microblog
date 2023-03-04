@@ -9,27 +9,26 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="navbar__title">
-            <img class="navbar__logo" src="image1.svg" alt="Book picture" />Microblog
+        <div class="navbar__brand">
+            <img class="navbar__logo" src="image1.svg" alt="Book picture" />
+            <span class="navbar__logo">Microblog</span>
         </div>
-        <div class="navbar__navigation">
-            <ul>
-                <li class="navbar__navigation-item">
-                    <a href="#" class="navbar__link">Recent</a>
-                </li>
-                <li class="navbar__navigation-item">
-                    <a href="#" class="navbar__link">Calendar</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item">
+                <a href="#" class="navbar__link">Recent</a>
+            </li>
+            <li class="navbar__navigation-item">
+                <a href="#" class="navbar__link">Calendar</a>
+            </li>
+        </ul>
     </header>
     <main class="main">
         <section>
-            <h1>Add new entry</h1>
+            <h1>Add new poem</h1>
             <form class="form" method="POST">
                 <p class="form__input">
                     <label for="entry" class="form__label">Entry content:</label>
-                    <textarea name="content" id="entry" class="form_textarea"></textarea>
+                    <textarea name="content" id="entry" class="form__textarea"></textarea>
                 </p>
                 <button type="submit" class="form__submit">Submit</button>
             </form> 
@@ -38,10 +37,11 @@
             <article class="entry">
                 <div>
                     <h2 class="entry__title">poem 1</h2>
-                    <time class="entry__date" datetime="2022-01-01" >10 Jan</time>
+                    <time class="entry__date" datetime="2022-01-01" >- Jan 10</time>
                 </div>
                 <p class="entry__content">
-                    lapis lazum
+                    lapis lazum d sfsd f sdf sfd sd f
+                    lapis lazum d sfsd f sdf sfd sd f
                 </p>
             </article>
         <section>
@@ -55,11 +55,11 @@
                 <a class="footer__item">Link to my GitHub:)</a>
             </section>
             <section class="right">
-                <div class="footer_column">
+                <div class="footer__column">
                     <a class="footer__item">Recent</a>
                     <a class="footer__item">Calendar</a>
                 </div>
-                <div>
+                <div class="footer__column">
                     <a class="footer__item" href="#">About</a>
                     <a class="footer__item">How this was made</a>
                 </div>

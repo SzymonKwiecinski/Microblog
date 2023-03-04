@@ -1,3 +1,172 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
 html {
-    font-size: 32px;
+    font-size: 24px;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.navbar {
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo {
+    margin-right: 30px;
+}
+
+.navbar__navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    color: grey;
+    padding: 0;
+}
+
+.navbar__navigation-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    max-width: 480px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.main h1 {
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form__input {
+    width: 100%;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__submit {
+    display: flex;
+    align-items: end;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    padding: 5px 20px;
+}
+
+.form__submit:hover {
+    background-color: rgb(160, 127, 127);
+}
+
+.form__textarea {
+    width: inherit;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(219, 213, 207);
+    border-radius: 10px;
+}
+
+.entry {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.entry__title {
+    display: inline;
+    font-size: 1.2rem;
+}
+
+.entry__date {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.entry__content {
+    font-size: 1rem;
+}
+
+.footer {
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    background-color: rgb(160, 156, 146);
+    margin-top: 50px;
+    padding: 20px 0;
+
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+
+}
+
+
+.footer .left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    /* align-items: flex-start; */
+}
+
+.footer .right {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    /* align-items: flex-end; */
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.footer__item {
+    margin-bottom: 5px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__item:hover {
+    text-decoration: underline;
 }
