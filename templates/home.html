@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
     <title>Microblog</title>
 </head>
 <body>
     <header class="navbar">
         <div class="navbar__brand">
-            <img class="navbar__logo" src="logo.svg" alt="Book picture" />
+            <img class="navbar__logo" src="/static/logo.svg" alt="Book picture" />
             <span class="navbar__logo">Microblog</span>
         </div>
         <ul class="navbar__navigation">
@@ -34,16 +34,17 @@
             </form> 
         </section>
             <h1>Recent poems</h1>
+            {% for entry in entries %}
             <article class="entry">
                 <div>
-                    <h2 class="entry__title">poem 1</h2>
-                    <time class="entry__date" datetime="2022-01-01" >- Jan 10</time>
+                    <h2 class="entry__title">{{entry[0] | truncate(15, true) }}</h2>
+                    <time class="entry__date" datetime="{{entry[1]}}" >- {{entry[2]}}</time>
                 </div>
                 <p class="entry__content">
-                    lapis lazum d sfsd f sdf sfd sd f
-                    lapis lazum d sfsd f sdf sfd sd f
+                    {{entry[0]}}
                 </p>
             </article>
+            {% endfor %}
         <section>
 
         </section>
